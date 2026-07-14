@@ -2,13 +2,13 @@
 
 **Chief Technology Officer Candidate — AI Tooling · Production Engineering · Lean SaaS Operations**
 
-📍 [Location] · ✉️ openarmsconsult2026@gmail.com · 🌐 [openarmsconsult.com](https://openarmsconsult.com) · 💻 [github.com/openarmsconsult2026-stack](https://github.com/openarmsconsult2026-stack)
+📍 Atlanta, Georgia · ✉️ openarmsconsult2026@gmail.com · 🌐 [openarmsconsult.com](https://openarmsconsult.com) · 💻 [github.com/openarmsconsult2026-stack](https://github.com/openarmsconsult2026-stack)
 
 ---
 
 ## Executive Summary
 
-Hands-on technology leader who builds at the intersection of AI tooling and production engineering. I design and ship AI-driven creative pipelines (video, image, copy) end to end, and — just as importantly — the infrastructure, security posture, and operational discipline that make them ship safely. My operating philosophy is **minimum viable infrastructure**: proving that a "one-operator SaaS" can run reliably with lean systems, ruthless automation, and clear engineering standards. I bring the rare combination a CTO role demands: the ability to write the code, architect the platform, and set the technical strategy.
+Hands-on technology leader who builds at the intersection of AI tooling and production engineering. I design and ship AI-driven creative pipelines (video, image, copy) end to end, and — just as importantly — the infrastructure, security posture, and operational discipline that make them ship safely. My operating philosophy is **minimum viable infrastructure**: proving that a "one-operator SaaS" can run reliably with lean systems, ruthless automation, and clear engineering standards. That technical depth sits on top of a decade of business experience — founding and running my own company, then leading district-level business development and freight negotiations — so I speak P&L and pipeline as fluently as code. It's the combination a CTO role demands: the ability to write the code, architect the platform, and hold my own in the boardroom.
 
 ---
 
@@ -73,14 +73,23 @@ Customer portal and payments hub for a buy-here-pay-here auto dealership.
 - Delivered client-facing web products end to end: requirements, build, launch, and ongoing operation.
 - Established engineering standards — security policies, repeatable deployment patterns, and documentation — sized for small-team execution without enterprise overhead.
 
-### [Previous Role — Title, Company]
-**[Start year] – [End year]**
+### Southern District Leader — CAT Global
+**[~2021] – [End year]**
 
-- [Achievement with scope/scale — team size, budget, or revenue impact]
-- [Achievement showing technical depth or platform decision]
-- [Achievement showing cross-functional or executive collaboration]
+- Led new-business acquisition across the southern district, owning the pipeline from prospecting through closed contracts.
+- Organized truckload capacity and driver assignments across the district, balancing service commitments against available equipment and hours.
+- Negotiated rates and terms directly with carriers, drivers, and customers — daily commercial negotiation at real freight-market stakes.
 
-*(Add earlier roles as needed.)*
+### Logistics Operations — Swan Transportation
+**[~2019] – [~2021]**
+
+- Two years in freight/logistics operations, coordinating shipments and carrier relationships before being recruited to a district-leadership role at CAT Global.
+
+### Owner — ToolWorx LLC (Gainesville, GA)
+**[~2015] – [~2019]**
+
+- Founded and ran a liquidation-resale business for ~4 years: sourced and purchased liquidated merchandise, priced it, and resold it at margin.
+- Owned the full P&L — buying decisions, inventory risk, cash flow, and sales channels — as a first company started straight out of college.
 
 ---
 
@@ -97,7 +106,7 @@ Customer portal and payments hub for a buy-here-pay-here auto dealership.
 
 ## Education
 
-- **Bachelor's Degree, Marketing — Kennesaw State University** (2011–2015)
+- **BBA, Marketing — Kennesaw State University** (2011–2015)
 
 ---
 
