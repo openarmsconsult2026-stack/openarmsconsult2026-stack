@@ -65,7 +65,7 @@ Customer portal and payments hub for a buy-here-pay-here auto dealership.
 ## Professional Experience
 
 ### Founder & Principal Technologist — Open Arms Consulting
-**[Start year] – Present**
+**2025 – Present**
 
 - Own the entire technology function: architecture, development, deployment, security, and vendor selection — the full CTO scope, exercised daily.
 - Built and operate a portfolio of AI creative-tooling products (video, image, and copy pipelines) on the Anthropic Claude API with agent-based workflows.
@@ -74,19 +74,19 @@ Customer portal and payments hub for a buy-here-pay-here auto dealership.
 - Established engineering standards — security policies, repeatable deployment patterns, and documentation — sized for small-team execution without enterprise overhead.
 
 ### Southern District Leader — CAT Global
-**[~2021] – [End year]**
+**2021 – 2025**
 
 - Led new-business acquisition across the southern district, owning the pipeline from prospecting through closed contracts.
 - Organized truckload capacity and driver assignments across the district, balancing service commitments against available equipment and hours.
 - Negotiated rates and terms directly with carriers, drivers, and customers — daily commercial negotiation at real freight-market stakes.
 
 ### Logistics Operations — Swan Transportation
-**[~2019] – [~2021]**
+**2019 – 2021**
 
 - Two years in freight/logistics operations, coordinating shipments and carrier relationships before being recruited to a district-leadership role at CAT Global.
 
 ### Owner — ToolWorx LLC (Gainesville, GA)
-**[~2015] – [~2019]**
+**2015 – 2019**
 
 - Founded and ran a liquidation-resale business for ~4 years: sourced and purchased liquidated merchandise, priced it, and resold it at margin.
 - Owned the full P&L — buying decisions, inventory risk, cash flow, and sales channels — as a first company started straight out of college.
