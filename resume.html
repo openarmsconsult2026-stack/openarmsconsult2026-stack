@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jonathan Low — CTO Technical Resume</title>
+<style>
+  :root {
+    --ink: #1a2332;
+    --muted: #5a6675;
+    --accent: #0f4c81;
+    --rule: #d7dde5;
+    --chip-bg: #eef3f8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    font-size: 9.6pt;
+    line-height: 1.45;
+  }
+  .page { padding: 0; }
+
+  /* Header */
+  header { border-bottom: 2.5px solid var(--accent); padding-bottom: 10pt; margin-bottom: 12pt; }
+  h1 { font-size: 21pt; font-weight: 700; letter-spacing: 0.5pt; }
+  .tagline { font-size: 10.5pt; color: var(--accent); font-weight: 600; margin-top: 2pt; }
+  .contact { margin-top: 5pt; font-size: 8.8pt; color: var(--muted); }
+  .contact span + span::before { content: "  ·  "; color: var(--rule); }
+  .contact a { color: var(--muted); text-decoration: none; }
+
+  /* Sections */
+  section { margin-bottom: 11pt; }
+  h2 {
+    font-size: 10pt; text-transform: uppercase; letter-spacing: 1.2pt;
+    color: var(--accent); border-bottom: 1px solid var(--rule);
+    padding-bottom: 2.5pt; margin-bottom: 6pt;
+  }
+  p { margin-bottom: 4pt; }
+  strong { font-weight: 700; }
+
+  /* Competencies grid */
+  .comp-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10pt; }
+  .comp-col h3 {
+    font-size: 8.8pt; text-transform: uppercase; letter-spacing: 0.8pt;
+    color: var(--ink); margin-bottom: 3pt;
+  }
+  .comp-col ul { list-style: none; }
+  .comp-col li {
+    padding-left: 9pt; position: relative; margin-bottom: 2.5pt; font-size: 8.9pt;
+  }
+  .comp-col li::before { content: "▪"; position: absolute; left: 0; color: var(--accent); font-size: 7pt; top: 1.5pt; }
+
+  /* Projects */
+  .proj { margin-bottom: 4.5pt; }
+  .proj .name { font-weight: 700; }
+  .proj .vis { font-size: 8pt; color: var(--muted); font-style: italic; }
+  .note {
+    background: var(--chip-bg); border-left: 3px solid var(--accent);
+    padding: 5pt 8pt; font-size: 8.9pt; margin-top: 6pt;
+  }
+
+  /* Experience */
+  .job { margin-bottom: 9pt; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-title { font-size: 10.5pt; font-weight: 700; }
+  .job-org { color: var(--accent); font-weight: 600; }
+  .job-dates { color: var(--muted); font-size: 9pt; white-space: nowrap; }
+  .job ul { list-style: none; margin-top: 3pt; }
+  .job li { padding-left: 10pt; position: relative; margin-bottom: 2.5pt; }
+  .job li::before { content: "—"; position: absolute; left: 0; color: var(--accent); }
+
+  /* Stack */
+  .stack-row { margin-bottom: 3pt; }
+  .stack-row .label { font-weight: 700; color: var(--ink); }
+
+  /* Why me */
+  .why ol { list-style: none; counter-reset: why; }
+  .why li {
+    counter-increment: why; padding-left: 18pt; position: relative; margin-bottom: 3.5pt;
+  }
+  .why li::before {
+    content: counter(why); position: absolute; left: 0; top: 0.5pt;
+    width: 12pt; height: 12pt; border-radius: 50%;
+    background: var(--accent); color: #fff; font-size: 7.5pt; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .placeholder { color: #b06000; background: #fdf3e3; padding: 0 2pt; border-radius: 2pt; }
+
+  @page { size: letter; margin: 0.55in 0.65in; }
+  section { break-inside: avoid; }
+  .job { break-inside: avoid; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <h1>Jonathan Low</h1>
+  <div class="tagline">Chief Technology Officer Candidate — AI Tooling · Production Engineering · Lean SaaS Operations</div>
+  <div class="contact">
+    <span><span class="placeholder">[Location]</span></span>
+    <span>openarmsconsult2026@gmail.com</span>
+    <span><a href="https://openarmsconsult.com">openarmsconsult.com</a></span>
+    <span><a href="https://github.com/openarmsconsult2026-stack">github.com/openarmsconsult2026-stack</a></span>
+  </div>
+</header>
+
+<section>
+  <h2>Executive Summary</h2>
+  <p>Hands-on technology leader who builds at the intersection of AI tooling and production engineering. I design and ship AI-driven creative pipelines (video, image, copy) end to end, and — just as importantly — the infrastructure, security posture, and operational discipline that make them ship safely. My operating philosophy is <strong>minimum viable infrastructure</strong>: proving that a "one-operator SaaS" can run reliably with lean systems, ruthless automation, and clear engineering standards. I bring the rare combination a CTO role demands: the ability to write the code, architect the platform, and set the technical strategy.</p>
+</section>
+
+<section>
+  <h2>Core Competencies</h2>
+  <div class="comp-grid">
+    <div class="comp-col">
+      <h3>Technical Leadership</h3>
+      <ul>
+        <li>Technology strategy &amp; roadmapping</li>
+        <li>Build-vs-buy and vendor decisions</li>
+        <li>Security-first engineering culture</li>
+        <li>Lean operations with minimal headcount</li>
+        <li>Product ownership, concept → shipped</li>
+      </ul>
+    </div>
+    <div class="comp-col">
+      <h3>Engineering</h3>
+      <ul>
+        <li>TypeScript across the full stack</li>
+        <li>Python tooling &amp; CLI development</li>
+        <li>Full-stack web architecture &amp; deployment</li>
+        <li>Cross-platform mobile development</li>
+        <li>CI/CD, Git workflows, developer tooling</li>
+      </ul>
+    </div>
+    <div class="comp-col">
+      <h3>AI / ML</h3>
+      <ul>
+        <li>Anthropic Claude API integration</li>
+        <li>Agent-based / agentic workflow design</li>
+        <li>Production AI creative pipelines: video, image, copy</li>
+        <li>Prompt engineering &amp; LLM orchestration</li>
+        <li>Evaluating &amp; productionizing emerging AI tooling</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Selected Projects &amp; Portfolio</h2>
+  <div class="proj"><span class="name">PostPilot</span> <span class="vis">(private)</span> — AI-assisted content/publishing tool; flagship of the AI creative-tooling work.</div>
+  <div class="proj"><span class="name">Zara Content Engine</span> <span class="vis">(private)</span> — automated content-generation pipeline built on LLM workflows.</div>
+  <div class="proj"><span class="name">Spray Scout</span> <span class="vis">(private)</span> — product with dedicated marketing/promo web presence, taken from build through go-to-market.</div>
+  <div class="proj"><span class="name">I Choose You</span> <span class="vis">(public)</span> — cross-platform mobile application.</div>
+  <div class="proj"><span class="name">Project Manager</span> <span class="vis">(public)</span> — full-stack web application.</div>
+  <div class="proj"><span class="name">CRM CLI</span> <span class="vis">(public)</span> — Python command-line CRM tooling.</div>
+  <div class="proj"><span class="name">Client web delivery</span> — production websites and landing pages for small businesses (Times Square Barbershop, Philly's on the Hill, PCS Build, Money Mike ad campaign): repeatable, low-overhead delivery.</div>
+  <div class="proj"><span class="name">Open Arms Consulting website</span> — company web presence, designed, built, and operated solo.</div>
+  <div class="note">Every public repository ships with a <strong>SECURITY.md</strong> and a defined disclosure process — security as a default, not an afterthought.</div>
+</section>
+
+<section>
+  <h2>Professional Experience</h2>
+  <div class="job">
+    <div class="job-head">
+      <div class="job-title">Founder &amp; Principal Technologist — <span class="job-org">Open Arms Consulting</span></div>
+      <div class="job-dates"><span class="placeholder">[Start year]</span> – Present</div>
+    </div>
+    <ul>
+      <li>Own the entire technology function: architecture, development, deployment, security, and vendor selection — the full CTO scope, exercised daily.</li>
+      <li>Built and operate a portfolio of AI creative-tooling products (video, image, and copy pipelines) on the Anthropic Claude API with agent-based workflows.</li>
+      <li>Standardized on TypeScript across the stack to maximize velocity and maintainability as a lean team.</li>
+      <li>Delivered client-facing web products end to end: requirements, build, launch, and ongoing operation.</li>
+      <li>Established engineering standards — security policies, repeatable deployment patterns, and documentation — sized for small-team execution without enterprise overhead.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-head">
+      <div class="job-title"><span class="placeholder">[Previous Role — Title, Company]</span></div>
+      <div class="job-dates"><span class="placeholder">[Start year] – [End year]</span></div>
+    </div>
+    <ul>
+      <li><span class="placeholder">[Achievement with scope/scale — team size, budget, or revenue impact]</span></li>
+      <li><span class="placeholder">[Achievement showing technical depth or platform decision]</span></li>
+      <li><span class="placeholder">[Achievement showing cross-functional or executive collaboration]</span></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Stack</h2>
+  <div class="stack-row"><span class="label">Languages:</span> TypeScript/JavaScript, Python</div>
+  <div class="stack-row"><span class="label">AI/LLM:</span> Anthropic Claude API, agentic/agent-based workflows, generative pipelines for video, image, and copy</div>
+  <div class="stack-row"><span class="label">Web:</span> Full-stack TypeScript (Node.js back ends, modern front-end frameworks), static and marketing sites</div>
+  <div class="stack-row"><span class="label">Mobile:</span> Cross-platform mobile development</div>
+  <div class="stack-row"><span class="label">Practices:</span> Git/GitHub workflows, CI/CD, security policies &amp; responsible disclosure, minimum-viable-infrastructure operations</div>
+</section>
+
+<section>
+  <h2>Education &amp; Certifications</h2>
+  <div class="stack-row"><span class="placeholder">[Degree], [Institution] — [Year]</span></div>
+  <div class="stack-row"><span class="placeholder">[Relevant certifications, if any]</span></div>
+</section>
+
+<section class="why">
+  <h2>Why Me as CTO</h2>
+  <ol>
+    <li><strong>I ship.</strong> Sixteen repositories of real, delivered software — products, tools, and client work — not slideware.</li>
+    <li><strong>I think in trade-offs.</strong> "Minimum viable infrastructure" is a strategic stance: every system justified by the value it delivers, not resume-driven architecture.</li>
+    <li><strong>I take security seriously by default.</strong> Disclosure policies on every public project reflect a culture I'd instill in any team I lead.</li>
+    <li><strong>I'm ahead of the AI curve.</strong> Deep, practical experience productionizing LLM and agent workflows — the capability every board is asking its CTO about right now.</li>
+  </ol>
+</section>
+
+</div>
+</body>
+</html>
