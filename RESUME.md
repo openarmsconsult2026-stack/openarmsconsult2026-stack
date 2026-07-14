@@ -41,6 +41,27 @@ Every public repository ships with a `SECURITY.md` and a defined disclosure proc
 
 ---
 
+## Selected Client Engagements
+
+### Zara Injury Law — Retainer Compliance Audit (2026)
+Personal-injury law firm operating in five states (NC, CO, WI, FL, AZ).
+
+- Built a contract-audit pipeline against the Vinesign (Filevine) e-signature API and scanned **2,786 signed retainer agreements** — the firm's entire archive — flagging and severity-tagging every defect.
+- Uncovered a **99.6% defect rate** in pre-suit fee terms and traced the root cause to the firm's retainer template, so a single template revision corrects ~99% of all future signings.
+- Segmented remediation into two tracks: 852 contracts requiring direct client outreach and 1,922 fixable via standard addenda — converting a legal-risk discovery into an executable plan.
+- Delivered a complete operational kit, not just data: one-page executive summary, CRM-importable outreach tracker, a 216-page paralegal action workbook, and 852 per-account call files.
+- Scoped, sold, and delivered as a fixed-fee engagement, including SOW and vendor-API discovery (worked directly with Filevine support to obtain undocumented API access).
+
+### Cars & Claims — BHPH Auto-Financing Customer Platform (2026)
+Customer portal and payments hub for a buy-here-pay-here auto dealership.
+
+- Migrated the production app off a no-code prototype (Lovable) onto a durable stack — **Vercel + Supabase (Postgres)** with custom domain/DNS cutover — including live customer-data migration with zero user-facing disruption.
+- Ran a full **bug-fix and security-hardening pass** before relaunch.
+- Diagnosed customer SMS silently failing for months — carriers were blocking every message under A2P 10DLC rules while the app reported "sent" — then implemented STOP/HELP compliance, built an admin SMS delivery-log dashboard for verification, and walked the owner through Twilio brand/campaign registration.
+- Integrated Google AI API features; delivered all of it to a non-technical solo owner, with every handoff written so the client could execute it themselves.
+
+---
+
 ## Professional Experience
 
 ### Founder & Principal Technologist — Open Arms Consulting
@@ -66,10 +87,11 @@ Every public repository ships with a `SECURITY.md` and a defined disclosure proc
 ## Technical Stack
 
 **Languages:** TypeScript/JavaScript, Python
-**AI/LLM:** Anthropic Claude API, agentic/agent-based workflows, generative pipelines for video, image, and copy
-**Web:** Full-stack TypeScript (Node.js back ends, modern front-end frameworks), static and marketing sites
+**AI/LLM:** Anthropic Claude API, agentic/agent-based workflows, generative pipelines for video, image, and copy, Google AI API
+**Web & Cloud:** Full-stack TypeScript (Node.js back ends, modern front-end frameworks), Vercel, Supabase (Postgres), DNS/domain management
+**Integrations:** Twilio (SMS/A2P 10DLC compliance), Filevine/Vinesign e-signature API, third-party REST APIs
 **Mobile:** Cross-platform mobile development
-**Practices:** Git/GitHub workflows, CI/CD, security policies & responsible disclosure, minimum-viable-infrastructure operations
+**Practices:** Git/GitHub workflows, CI/CD, security hardening & responsible disclosure, compliance-driven auditing, minimum-viable-infrastructure operations
 
 ---
 
