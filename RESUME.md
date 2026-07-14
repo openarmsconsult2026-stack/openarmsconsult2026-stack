@@ -95,10 +95,9 @@ Customer portal and payments hub for a buy-here-pay-here auto dealership.
 
 ---
 
-## Education & Certifications
+## Education
 
-- **[Degree], [Institution]** — [Year]
-- [Relevant certifications, if any]
+- **Bachelor's Degree, Marketing — Kennesaw State University** (2011–2015)
 
 ---
 
