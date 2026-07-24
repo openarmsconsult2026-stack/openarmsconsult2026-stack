@@ -45,7 +45,7 @@ def footer(canvas, doc):
     canvas.setFont("Helvetica", 7.5)
     canvas.setFillColor(MUTED)
     canvas.drawString(0.85 * inch, 0.5 * inch,
-                      "Best Times to Post on Social Media — 2026 Edition  ·  All times are the audience's local time")
+                      "Best Times & Frequency to Post on Social Media — 2026 Edition  ·  All times are the audience's local time")
     canvas.drawRightString(letter[0] - 0.85 * inch, 0.5 * inch, f"Page {doc.page}")
     canvas.restoreState()
 
@@ -57,8 +57,8 @@ doc = SimpleDocTemplate(OUT, pagesize=letter, topMargin=0.8 * inch, bottomMargin
 story = []
 
 # ---------------- Page 1: title + at-a-glance ----------------
-story.append(Paragraph("Best Times to Post on Social Media", h_title))
-story.append(Paragraph("2026 Edition — Data-backed peak engagement windows for every major platform,<br/>"
+story.append(Paragraph("Best Times &amp; Frequency to Post on Social Media", h_title))
+story.append(Paragraph("2026 Edition — Data-backed peak engagement windows and posting cadence for every major platform,<br/>"
                        "compiled from Sprout Social, Buffer, and Hootsuite research. Updated July 2026.", h_sub))
 story.append(HRFlowable(width="100%", thickness=2, color=ACCENT, spaceAfter=14))
 
@@ -99,6 +99,39 @@ story.append(Spacer(1, 10))
 story.append(Paragraph(
     "All times are your <b>audience's local time zone</b>. Where major studies disagree, both findings are shown — "
     "platform-level detail and study methodology are on the following pages.", small))
+story.append(PageBreak())
+
+# ---------------- Frequency table ----------------
+story.append(Paragraph("How Often to Post — Recommended Frequency", h2))
+story.append(Paragraph(
+    "Frequency benchmarks from Buffer's 2026 frequency guide, HeyOrca, and Social Champ. The overriding 2026 finding: "
+    "<b>quality beats quantity</b>. Buffer's study of 1.2 million posts found accounts posting 2–3&times;/week with high "
+    "engagement grew <b>2.4&times; faster</b> than accounts posting daily with low engagement.", body))
+story.append(Spacer(1, 4))
+
+freq = [
+    [P("Platform", cell_h), P("Recommended Frequency", cell_h), P("Notes", cell_h)],
+    [P("<b>Facebook</b>"), P("1–2 posts per day"), P("One strong daily post is usually enough to stay visible.")],
+    [P("<b>Instagram</b>"), P("3–5 feed posts/week + daily Stories + 2–3 Reels/week"), P("Reels and Stories carry reach; feed anchors the profile.")],
+    [P("<b>TikTok</b>"), P("2–5 posts/week; up to 1–3/day for aggressive growth"), P("Daily posters see ~3.5&times; faster follower growth than 2–3&times;/week posters. Volume is rewarded more than on any other platform.")],
+    [P("<b>LinkedIn</b>"), P("2–5 posts/week (2–3 is the sweet spot)"), P("Consistent 2–3/week over six months correlates with ~78% higher follower growth than irregular bursts. Posts have a long shelf life.")],
+    [P("<b>X (Twitter)</b>"), P("2–5 posts per day"), P("Short post lifespan (hours); higher frequency has the least downside here.")],
+    [P("<b>YouTube</b>"), P("1 long-form video/week + 3–7 Shorts/week"), P("Consistency beats frequency — a reliable weekly slot outperforms sporadic uploads.")],
+    [P("<b>Pinterest</b>"), P("15–25 pins per day (top performers)"), P("Pinning 50+/day can hurt distribution; spread pins across the day.")],
+    [P("<b>Threads</b>"), P("1–2 posts per day"), P("Conversational cadence; consistency matters more than volume.")],
+]
+ft = Table(freq, colWidths=[1.05 * inch, 2.35 * inch, 3.65 * inch], repeatRows=1)
+ft.setStyle(TableStyle([
+    ("BACKGROUND", (0, 0), (-1, 0), ACCENT),
+    ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, ROW_ALT]),
+    ("GRID", (0, 0), (-1, -1), 0.5, colors.HexColor("#d7dcf0")),
+    ("VALIGN", (0, 0), (-1, -1), "TOP"),
+    ("TOPPADDING", (0, 0), (-1, -1), 5),
+    ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+    ("LEFTPADDING", (0, 0), (-1, -1), 6),
+    ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+]))
+story.append(ft)
 story.append(PageBreak())
 
 # ---------------- Page 2: platform detail ----------------
@@ -163,7 +196,9 @@ story.append(Paragraph(
     "Pinterest, TikTok and X, from 30,000+ customers globally, collected November 27, 2025 – February 27, 2026. "
     "<b>Buffer (2026):</b> platform-specific analyses of 9.6M Instagram posts, 7.1M TikTok posts, 4.8M LinkedIn posts, and "
     "2.5M Threads posts. <b>Hootsuite (2026):</b> engagement data from 300 B2B and B2C brand accounts. "
-    "<b>RecurPost (2026):</b> 2M+ Pinterest pins.", body))
+    "<b>RecurPost (2026):</b> 2M+ Pinterest pins. "
+    "<b>Frequency benchmarks:</b> Buffer's 2026 frequency guide (including a 1.2M-post growth study), with corroborating "
+    "platform cadence data from HeyOrca and Social Champ.", body))
 
 story.append(Paragraph("Sources", h2))
 sources = [
@@ -180,6 +215,9 @@ sources = [
     ("Buffer — Best Time to Post on Threads (2.5M posts)", "https://buffer.com/resources/the-best-time-to-post-on-threads/"),
     ("RecurPost — Best Time to Post on Pinterest (2M+ pins)", "https://recurpost.com/blog/best-time-to-post-on-pinterest/"),
     ("Research.com — Best Times to Post on Social Media: 2026 Studies & Statistics", "https://research.com/tutorials/the-best-times-to-post-on-social-media"),
+    ("Buffer — How Often to Post on Social Media in 2026 (frequency guide)", "https://buffer.com/resources/social-media-frequency-guide/"),
+    ("HeyOrca — Optimal Social Media Posting Frequency by Platform (2026)", "https://www.heyorca.com/blog/social-media-posting-frequency-by-platform-2026"),
+    ("Social Champ — How Often to Post on Social Media for Consistency in 2026", "https://www.socialchamp.com/blog/how-often-to-post-on-social-media/"),
 ]
 src_style = ParagraphStyle("src", parent=small, fontSize=8.5, leading=13, spaceAfter=2)
 for label, url in sources:
